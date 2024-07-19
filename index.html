@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio_web</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/fbe0e5da3f.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <div class="header-wid">
+        <nav>
+          <!-- <img src="/images/logo3-removebg-preview (1).png" alt="not found" class="logo"> -->
+          <div>
+            <p class="nam">Shashi Kumar</p>
+          </div>
+          <div class="keep-align">
+            <ul id="sidemenu">  
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <!-- <li><a href="#">Services</a></li> -->
+              <li><a href="#project">Project</a></li>
+              <li><a href="#contact">contact</a></li>
+              <i id="mark" class="fa-solid fa-xmark" onclick="Closemenu()"></i>
+            </ul>
+          </div>
+          <i id="bar" class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+      <!-- ...........home.........   -->
+      <div class="header-text">
+        <h1>Hi,My name is <span>Shashi</span> <br> and I am a Passionate </h1>
+        <span id="element" style="color:#ff004f; font-size: 3.2rem; font-weight: 800;"></span>
+      </div>
+    </div>
+    <!--  ................... ABOUT  .......... -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img id="my" src="images/shashi_img.jpg" alt="my image" width="300" height="430px" >   <!-- height="500px"  -->
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p id="con"> I am currently doing B.Tech in Computer Science in NIT Patna and will be graduating in 2025 .
+              <br>
+              I am Coder ,Devloper ,Tech Enthusiastic and a fast learner . <br> I currently want to get oppurtunity in
+              software devloper role and want to gain much knowledge and experience .
+
+
+
+            </p>
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span> <br> Learn HTML,CSS,JavaScript and create multiple project</li>
+                <li><span>Competitive Programmar</span> <br>Appear for contest on codechef, codeforces </li>
+                <li><span>Programming Language</span> <br> C ,C++ ,Java, Python</li>
+                <li><span>Database</span> <br> DBMS ,MySQL,Excel</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Intern at EiSystems</span> <br> Learn Python Programming language and create project on Random
+                  Password Generator </li>
+                <li><span>Campus Ambasadoor at PrepBytes</span> <br> Learn to manage Social media and marketting </li>
+                <!-- <li><span>Web Devloper</span> <br>  create website from scratch </li>
+                </ul> -->
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span> B.Tech CSE : 2021-present</span> <br> NIT Patna ,Bihar </li>
+                <li><span> Intermediate : 2019-2021</span> <br> NPCS Patna ,Bihar</li>
+                <li><span>Matriculation : 2019</span> <br> Mother Teressa Academy Darbhanga, Bihar </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- --------- ........ Projects  ................ -->
+  <div id="project">
+    <div class="container">
+      <h1 class="sub-title">Project</h1>
+      <div class="project-list">
+
+        <div class="weather-project" style="cursor:pointer;">
+          <i class="fa-solid fa-cloud"></i>
+          <!-- <img src="images/weather.jpg" alt="icons" width="300" height="400"> -->
+          <h2>Weather Forecasting</h2>
+          <p>
+            <ul>
+              <li>
+               Devloped this webiste for getting real time weather information
+              </li>
+              <li> used HTML ,CSS,JavaScript and OpenWeatherMap API</li>
+            </ul>
+           </p>
+        </div>
+        <div class="PortFolio-project" style="cursor:pointer;">
+          <i class="fa-solid fa-business-time"></i>
+          <h2>Portfolio</h2>
+          <p>
+            <ul>
+              <li>
+               Devoped a Responsive Website               </li>
+              <li>used HTML ,CSS,JavaScript </li>
+            </ul>
+           </p>
+          <a href="#"> </a>
+        </div>
+        <div class="calculator-project" style="cursor:pointer;">
+          <i class="fa-solid fa-calculator"></i>
+          <h2>calculator</h2>
+          <p>
+            <ul>
+              <li>
+               can be used for  basic calculation              </li>
+              <li>used HTML ,CSS,JavaScript </li>
+            </ul>
+           </p>
+          <!-- <a href="https://shashi-127.github.io/Calculator-/">link </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ................. contact .................  -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 id="con" class="'sub-title">Contact</h1>
+          <span><i class="fa-solid fa-envelope"></i> </span>
+          <a id="mail" href="mailto:shashikr7299@gmail.com" class="text-lg md:text-2xl">shashikr7299@gmail.com</a>
+          <p> <i class="fa-solid fa-phone"></i>7250253599</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/shashi-kumar-288126226/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Shashi-127"><i class="fa-brands fa-square-github"></i></a>
+            <!-- <a href="https://www.instagram.com/shashinitp/"><i class="fa-brands fa-square-instagram"></i></a> -->
+
+            <!-- <a href="https://x.com/shashiKuma34354"><i class="fa-brands fa-square-x-twitter"></i></a> -->
+          </div>
+          <a id="resume" href="Resume_Google.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+            <button class="btn btn2" type="submit">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>copyright © Shashi Kumar Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link")
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab")
+      }
+      event.currentTarget.classList.add("active-link")
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function Closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Web Developer</i>', '<i>Competitive Programmer</i>', '<i>Coder</i>'],
+      typeSpeed: 90,
+    });
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyqQj7SA0utz3E5A7zJCFVUHI_ow-3HxSGG4Of7aIAW8yuunl5sUFOBkNrX3Xo1yUDOxw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent Successfully"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 500)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    const weather_div = document.querySelector(".weather-project");
+    weather_div.addEventListener('click', () => {
+      // window.location.href = "https://www.google.com";
+      window.open('https://www.google.com', '_blank');
+    });
+    const portfolio_div = document.querySelector(".PortFolio-project");
+    portfolio_div.addEventListener('click', () => {
+      // window.location.href = "https://www.google.com";
+      window.open('https://www.google.com', '_blank');
+    });
+    const calculator_div = document.querySelector(".calculator-project");
+    calculator_div.addEventListener('click', () => {
+      // window.location.href ="https://shashi-127.github.io/Calculator-/";
+      window.open('https://shashi-127.github.io/Calculator-/', '_blank');
+    });
+  </script>
+</body>
+
+</html>
