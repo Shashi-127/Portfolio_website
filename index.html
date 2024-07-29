@@ -94,8 +94,8 @@
       <h1 class="sub-title">Project</h1>
       <div class="project-list">
 
-        <div class="weather-project" style="cursor:pointer;">
-          <i class="fa-solid fa-cloud"></i>
+        <div class="list-project" style="cursor:pointer;">
+          <i class="fa-solid fa-list-ul"></i>
           <!-- <img src="images/weather.jpg" alt="icons" width="300" height="400"> -->
           <h2>To-do-List</h2>
           <p>
@@ -109,10 +109,10 @@
           <!-- <a href="https://shashi-127.github.io/Portfolio_website/">click </a> -->
          
         </div>
-        <!-- <div class="weather-project" style="cursor:pointer;">
+        <div class="weather-project" style="cursor:pointer;">
           <i class="fa-solid fa-cloud"></i>
-           <img src="images/weather.jpg" alt="icons" width="300" height="400"> -->
-       <!--  <h2>Weather Forecasting</h2>
+           <!-- <img src="images/weather.jpg" alt="icons" width="300" height="400"> -->
+        <h2>Weather Forecasting</h2>
           <p>
           <ul>
             <li>
@@ -121,9 +121,9 @@
             <li> used HTML ,CSS,JavaScript and OpenWeatherMap API</li>
           </ul>
           </p>
-           <a href="https://shashi-127.github.io/Portfolio_website/">click </a> 
+           <!-- <a href="https://shashi-127.github.io/Portfolio_website/">click </a>  -->
          
-        </div> -->
+        </div>
         <div class="PortFolio-project" style="cursor:pointer;">
           <i class="fa-solid fa-business-time"></i>
           <h2>Portfolio</h2>
@@ -242,10 +242,15 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+    const list_div = document.querySelector(".list-project");
+    list_div.addEventListener('click', () => {
+      // window.location.href = "https://www.google.com";
+      window.open('https://shashi-127.github.io/To-do-List/', '_blank');
+    });
     const weather_div = document.querySelector(".weather-project");
     weather_div.addEventListener('click', () => {
       // window.location.href = "https://www.google.com";
-      window.open('https://shashi-127.github.io/To-do-List/', '_blank');
+      window.open('https://shashi-127.github.io/Weather-App/', '_blank');
     });
     const portfolio_div = document.querySelector(".PortFolio-project");
     portfolio_div.addEventListener('click', () => {
